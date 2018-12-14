@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/info/info",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#4A4A4A",
+    "selectedColor": "#5fd097",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点餐",
+        "iconPath": "images/icon/home1.png",
+        "selectedIconPath": "images/icon/home2.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "资讯",
+        "iconPath": "images/icon/zixun1.png",
+        "selectedIconPath": "images/icon/zixun2.png"
+      }
+    ]
+  }
+}

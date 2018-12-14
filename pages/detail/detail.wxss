@@ -1,0 +1,4 @@
+.article__detail text {
+  display: block;
+  text-indent: 1em;
+}

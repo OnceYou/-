@@ -1,0 +1,19 @@
+<view class='container flex-column'>
+  <view class='header'>
+    <view class='flex-area jc-c tips-wrap'>
+      <image class='icon-tips' src='/images/icon/tips.png'></image>
+      <text class='desc ta-c'>您可以通过下方输入框添加菜品信息哦~</text>
+    </view>
+    <view class='input-wrap flex-area jc-sp ai-c'>
+      <input class='input bd-rds' placeholder='请输入您要添加的菜品名称' placeholder-class='input-hold' value='{{inputValue}}' bindinput='bindTextChange'></input>
+      <button class='btn-add' type='primary' disabled='{{inputValue !== "" ? false : true}}' bindtap="addMenu">添加</button>
+    </view>
+  </view>
+  <view class='tags-wrap flex-area jc-c'>
+    <block wx:for="{{arrayTag}}" wx:key='tag'>
+      <text class='tag {{item.select ? "active" : ""}}'>{{item.tag}}</text>
+    </block>
+  </view>
+  <button class='bg-color-yellow-btn centerX btn-order self-style {{arrayTag.length >= 2 ? "" : "hide"}}'  bindtap="removeList">清除列表</button>
+  <button class='bg-color-yellow-btn centerX btn-order {{arrayTag.length >= 2 ? "" : "hide"}}' type='primary' bindtap="orderFood">开始点餐</button>
+</view>

@@ -1,0 +1,26 @@
+<view class='container'>
+  <scroll-view class="scroll-view_H" scroll-y="true">
+    <view class='panel'>
+      <view class='panel__hd'>历史上的今天</view>
+      <view class='panel__bd'>
+        <block wx:for="{{results}}" wx:for-item='item' wx:key='item.e_id'>
+          <navigator url="/pages/detail/detail?e_id={{item.e_id}}&date={{item.date}}">
+            <view class='media'>
+              <view class='media__hd'>
+                <image class='icon-tips' src='/images/pic/pic.jpg'></image>
+              </view>
+              <view class='media__bd'>
+                <text class='media__title'>{{item.title}}</text>
+                <text class='media__desc'>{{item.date}}</text>
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </scroll-view>  
+</view>
+
+<!-- <view class='container flex-column ai-c jc-c' wx:if="{{results == null}}">
+  <text>暂无咨询哦~</text>
+</view> -->
