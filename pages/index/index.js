@@ -8,8 +8,11 @@ Page({
     randomValue: Number
   },
 
-  onLoad: function (options) {
-    
+  onShow: function (options) {
+    this.setData({
+      arrayTag: !!wx.getStorageSync('arrayTag') ? wx.getStorageSync('arrayTag') : []
+    });
+    console.log(this.data.arrayTag)
   },
 
   bindTextChange: function(e) {
@@ -75,7 +78,7 @@ Page({
   onShareAppMessage: function (options) {
     if (options.from === 'menu') {
       return {
-        title: '吃什么不重要，重要的是有的选！',
+        title: '什么都可以将就，唯独吃不可以！',
         path: '/pages/index/index'
       }
     }

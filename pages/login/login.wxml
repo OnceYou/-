@@ -1,0 +1,4 @@
+<view class="container flex-column jc-c">
+  <view class="slogan">什么都可以将就，唯独吃不可以！</view>
+  <button class="btn btn-login" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">开启吃货之旅</button>
+</view>

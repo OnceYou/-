@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/info/info",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/user/user"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",
@@ -24,6 +26,12 @@
         "text": "资讯",
         "iconPath": "images/icon/zixun1.png",
         "selectedIconPath": "images/icon/zixun2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon/user1.png",
+        "selectedIconPath": "images/icon/user2.png"
       }
     ]
   }

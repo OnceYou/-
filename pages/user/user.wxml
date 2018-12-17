@@ -1,2 +1,17 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="container container-scroll">
+  <view class='media'>
+    <view class='media__hd'>
+      <image class='avater' src='{{userInfo.avatarUrl}}' bindtap="previewImage"></image>
+    </view>
+    <view class='media__bd'>
+      <text class='media__title'>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="title-bar mt10">
+    <view class="title-bar__hd">
+      <image class='icon-star' src='/images/icon/star.png'></image>
+    </view>
+    <view class="title-bar__bd">我的收藏</view>
+    <view class="title-bar__ft"></view>
+  </view>
+</view>

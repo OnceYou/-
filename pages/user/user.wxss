@@ -1,1 +1,18 @@
-/* pages/user/user.wxss */
+.container {
+  background-color: #e6e6e6;
+}
+
+.media {
+  background-color: #fff;
+}
+
+.media__hd {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.media__hd .avater {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+.slogan {
+  margin: 0 auto 50rpx;
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.btn-login {
+  width: 60%;
+  background-color: #405f80;
+}
