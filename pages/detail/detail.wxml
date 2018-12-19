@@ -1,4 +1,4 @@
-<view class="container container-scroll page-article">
+<view class="container container-scroll page-article" wx:if="{{results != null}}">
   <view class="article">
     <view class="article__title">{{results.title}}</view>
     <view class="article__info">
@@ -11,4 +11,8 @@
       </block>
     </view>
   </view>
+</view>
+
+<view class='container page-article flex-column ai-c jc-c' wx:else>
+  <text>文章详情消失在二次元中~</text>
 </view>
